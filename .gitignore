@@ -12,6 +12,7 @@ uploads/
 
 # SQL
 *.sql
+!database/schema.sql
 
 # Logs
 logs/
