@@ -1,37 +1,54 @@
-# Node
+# Dependencies
 node_modules/
+jspm_packages/
 
-# Env
+# Environment
 .env
-.env.local
-.env.development
-.env.production
-
-# Logs
-logs
-*.log
-npm-debug.log*
-
-# Build
-dist/
-build/
+.env.*
+!.env.example
 
 # Uploads
 uploads/
 
+# SQL
+*.sql
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
+coverage/
+
+# Cache
+.cache/
+.parcel-cache/
+.npm/
+.vite/
+
 # VSCode
 .vscode/
+.vscode-test/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# SQL
-*.sql
+# TypeScript
+*.tsbuildinfo
 
-# Cache
-.cache/
-.tmp/
+# Runtime
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Coverage
-coverage/
+# Misc
+.nyc_output/
+.eslintcache
+.stylelintcache
