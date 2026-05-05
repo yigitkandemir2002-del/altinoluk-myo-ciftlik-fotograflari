@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yönetim - Postlar</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Postlar</h1>
+      <nav>
+        <a href="/">Ana Sayfa</a>
+        <a href="/yonetim-paneli">Yeni Post</a>
+        <a href="/yonetim-postlar">Postlar</a>
+        <button id="logoutBtn" class="btn small-btn" type="button">Çıkış Yap</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Eklenen Postlar</h2>
+      <div id="adminPostsList" class="admin-post-list"></div>
+    </section>
+  </main>
+
+  <script src="/admin-posts.js"></script>
+</body>
+</html>

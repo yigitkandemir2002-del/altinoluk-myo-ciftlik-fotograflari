@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yönetim Paneli</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Yönetim Paneli</h1>
+      <nav>
+        <a href="/">Ana Sayfa</a>
+        <a href="/yonetim-paneli">Yeni Post</a>
+        <a href="/yonetim-postlar">Postlar</a>
+        <button id="logoutBtn" class="btn small-btn" type="button">Çıkış Yap</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Yeni Paylaşım Ekle</h2>
+
+      <form id="postForm" class="post-form">
+        <div class="form-group">
+          <label for="title">Başlık</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Açıklama</label>
+          <textarea id="description" name="description" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="created_at">Eklenme Tarihi</label>
+          <input type="datetime-local" id="created_at" name="created_at" />
+        </div>
+
+        <div class="form-group">
+          <label for="images">Fotoğraflar</label>
+          <input
+            type="file"
+            id="images"
+            name="images"
+            accept=".jpg,.jpeg,.png,.webp"
+            multiple
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn" type="submit">Paylaşımı Kaydet</button>
+      </form>
+
+      <div id="formMessage" class="form-message"></div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
